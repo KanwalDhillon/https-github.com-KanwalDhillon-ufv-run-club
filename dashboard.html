@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Impact - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+         <a href="mission.html">Our Mission</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      </div>
+      <div class="profile">
+        <!-- ADDED ID="user-welcome" HERE -->
+        <!-- The text "Student" is just a placeholder until JavaScript loads the real name -->
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+       
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header" style="padding-bottom: 100px;">
+      <h1>My Community Impact</h1>
+      <p>See how your physical effort translates into shared wealth for students.</p>
+    </section>
+
+    <!-- DASHBOARD METRICS GRID -->
+    <section class="dashboard-grid">
+      <div class="stat-card primary">
+        <div class="stat-title">Total Wealth Shared</div>
+        <div class="stat-value green">$150.00</div>
+        <div class="stat-desc">Raised for Student Financial Aid</div>
+      </div>
+      
+      <div class="stat-card secondary">
+        <div class="stat-title">Distance Run</div>
+        <div class="stat-value">98.5 km</div>
+        <div class="stat-desc">Total contribution distance</div>
+      </div>
+      
+      <div class="stat-card tertiary">
+        <div class="stat-title">Active Pledge</div>
+        <div class="stat-value" style="font-size: 24px; margin-top: 15px;">Food Bank</div>
+        <div class="stat-desc">Current charity selection</div>
+      </div>
+    </section>
+
+    <!-- LOWER DASHBOARD SECTION -->
+    <section class="dashboard-lower">
+      
+      <!-- Badges Panel -->
+      <div class="dashboard-panel">
+        <div class="panel-header">
+            <h3>Your Ethical Badges</h3>
+            <p>Earn badges by consistently "sharing the wealth".</p>
+        </div>
+        
+        <div class="badge-grid">
+            <div class="badge-item earned">
+                <div class="badge-icon">🤝</div>
+                <div class="badge-label">Community Helper</div>
+            </div>
+            <div class="badge-item gold">
+                <div class="badge-icon">🎓</div>
+                <div class="badge-label">Student Supporter</div>
+            </div>
+            <div class="badge-item locked">
+                <div class="badge-icon">🔒</div>
+                <div class="badge-label">Wealth Sharer</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Activity Feed Panel -->
+      <div class="dashboard-panel">
+        <div class="panel-header">
+            <h3>Recent Pledges</h3>
+            <p>Your latest runs and their impact.</p>
+        </div>
+        
+        <ul class="activity-feed">
+            <li class="activity-item">
+                <div class="activity-left">
+                    <span class="activity-title">Morning Run (5km)</span>
+                    <span class="activity-date">Oct 28, 2023</span>
+                </div>
+                <span class="activity-amount">+$5.00 Aid</span>
+            </li>
+            <li class="activity-item">
+                <div class="activity-left">
+                    <span class="activity-title">Campus Loop (10km)</span>
+                    <span class="activity-date">Oct 22, 2023</span>
+                </div>
+                <span class="activity-amount">+$10.00 Food</span>
+            </li>
+            <li class="activity-item">
+                <div class="activity-left">
+                    <span class="activity-title">Warmup (2km)</span>
+                    <span class="activity-date">Oct 15, 2023</span>
+                </div>
+                <span class="activity-amount">+$2.00 Aid</span>
+            </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

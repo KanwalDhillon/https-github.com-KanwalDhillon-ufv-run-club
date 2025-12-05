@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Early Bird Week - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html" class="active">Challenges</a>
+      </div>
+      <div class="profile">
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header" style="background: linear-gradient(135deg, #0b3d2e, #2ecc71);">
+      <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Weekly Sprint</span>
+      <h1 style="margin-top: 15px;">Early Bird Week</h1>
+      <p>Log 3 runs before 8:00 AM • Support Textbook Fund</p>
+    </section>
+
+    <div class="container" style="display: flex; gap: 50px; flex-wrap: wrap; margin-bottom: 80px;">
+        
+        <div style="flex: 2; min-width: 300px;">
+            <!-- ETHICAL MISSION -->
+            <div style="background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-left: 5px solid #00a36c; margin-bottom: 40px;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;">Wake Up for Change</h2>
+                <p style="font-style: italic; font-size: 18px; color: #555; margin-bottom: 15px;">
+                    "APPS DO NOT help the community, UNTIL NOW."
+                </p>
+                <p>
+                    Rising early isn't easy, but neither is paying for textbooks. For every student who completes this Early Bird challenge, we unlock funds for the Textbook Exchange Program. Let's prove that technology can mobilize us to <strong>share the wealth</strong> with classmates in need.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <h3 style="margin-bottom: 20px; font-size: 22px;">Challenge Details</h3>
+                <ul class="feature-list">
+                    <li><strong>Goal:</strong> Complete 3 runs before 8:00 AM</li>
+                    <li><strong>Duration:</strong> This week only (Mon-Sun)</li>
+                    <li><strong>Impact:</strong> Helps subsidize textbook costs for 5 students</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="flex: 1; min-width: 280px;">
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid #eee; position: sticky; top: 100px;">
+                <h3 style="margin-bottom: 5px;">Join Challenge</h3>
+                <p style="font-size: 13px; color: #666; margin-bottom: 25px;">Runs must be logged manually or via GPS.</p>
+                <button class="form-btn" onclick="alert('Challenge Joined! Get some sleep, you have an early run tomorrow!')">I'm In!</button>
+            </div>
+        </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CS — Instructor: Kevin Renso</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

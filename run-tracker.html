@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Run Tracker - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+         <a href="mission.html">Our Mission</a>
+        <a href="run-tracker.html" class="active">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      </div>
+      <div class="profile">
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+    </nav>
+      <div class="profile">
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Track Your Activity</h1>
+      <p>Log your miles. Share the wealth. Build the community.</p>
+    </section>
+
+    <!-- NEW: FEEDBACK AREA (Where the success message prints) -->
+    <!-- This is required for the new script to show the prompt -->
+    <div id="tracker-feedback" style="max-width: 600px; margin: 0 auto;"></div>
+
+    <section class="form-section">
+      <!-- ETHICAL REMINDER FROM PPT -->
+      <div style="background-color: #f9f9f9; border-left: 4px solid #00a36c; padding: 15px; margin-bottom: 20px; font-size: 14px; color: #555;">
+        <strong>Mission Reminder:</strong> "Why should APPS help only the rich? Everyone should share the wealth."
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" />
+        </div>
+        
+        <div class="form-group">
+          <label for="distance">Distance (km)</label>
+          <input type="number" id="distance" placeholder="e.g., 5.0" step="0.1" required />
+        </div>
+
+        <div class="form-group">
+          <label for="duration">Duration (minutes)</label>
+          <input type="number" id="duration" placeholder="e.g., 30" required />
+        </div>
+
+        <div class="form-group">
+          <label for="pledge">Community Pledge (Share the Wealth)</label>
+          <p style="font-size: 12px; margin-bottom: 5px; color: #666;">
+            Select a student cause. 1km = $1.00 generated value.
+          </p>
+          <select id="pledge">
+            <option value="none">No Pledge (Just tracking)</option>
+            <option value="Student Aid">Student Financial Aid</option>
+            <option value="Food Bank">Campus Food Bank</option>
+            <option value="Textbooks">Textbook Exchange Fund</option>
+          </select>
+        </div>
+
+        <button type="submit" class="form-btn">Log Run & Share Wealth</button>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Your History</h2>
+      <table class="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Distance</th>
+                <th>Time</th>
+                <th>Pledge</th>
+                <th>Wealth Generated</th> <!-- NEW COLUMN ADDED -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be printed here automatically by script.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;"><centre>CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</centre></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

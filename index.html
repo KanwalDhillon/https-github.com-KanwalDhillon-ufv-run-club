@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>UFV Run Club - Run for Good</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html" class="active">Home</a>
+          <a href="mission.html">Our Mission</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      
+      </div>
+      <div class="profile">
+        <!-- ADDED ID="user-welcome" HERE -->
+        <!-- Logic in script.js will update this text if user is logged in -->
+       
+        
+        <!-- Script will toggle these based on login state (advanced) or just show links -->
+        <!-- For now, we keep simple links, but add the welcome text above -->
+        <a class="btn" href="login.html">Login</a>
+        <a class="btn filled" href="signup.html">Join Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Run for Yourself.<br>Run for Your Community.</h1>
+        <p>The only running app that turns your kilometers into financial aid for students.</p>
+        <div class="hero-buttons">
+            <a class="hero-btn primary" href="signup.html">Start Running</a>
+            <a class="hero-btn secondary" href="challenges.html">View Challenges</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETHICAL MISSION STATEMENT -->
+    <section class="mission-statement">
+      <div class="container">
+        <h2>Our Core Mission</h2>
+        <div class="mission-box">
+            <p class="highlight-text">"APPS DO NOT help the community, UNTIL NOW."</p>
+            <p>Most fitness apps focus on the individual. We focus on the collective. We believe everyone should <strong>share the wealth</strong>, and our student community is stronger for it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE 1: RUN TRACKER -->
+    <section class="showcase alternate-bg">
+        <div class="container split-layout">
+            <div class="text-side">
+                <span class="eyebrow">Track Your Impact</span>
+                <h2>Every Kilometer Counts</h2>
+                <p>Log your runs effortlessly. For every kilometer you run, our sponsors pledge donations to the UFV Student Aid fund. Watch your personal contribution grow in real-time.</p>
+                <ul class="feature-list">
+                    <li>✓ Real-time GPS & Manual Entry</li>
+                    <li>✓ Ethical Donation Calculator</li>
+                    <li>✓ Personal Progress History</li>
+                </ul>
+                <a href="run-tracker.html" class="text-link">Go to Tracker &rarr;</a>
+            </div>
+            <div class="visual-side">
+                <div class="mockup-card">
+                    <div class="mockup-header">Recent Activity</div>
+                    <div class="mockup-stat">
+                        <span class="label">Today's Run</span>
+                        <span class="value">5.2 km</span>
+                    </div>
+                    <div class="mockup-stat highlight">
+                        <span class="label">Wealth Shared</span>
+                        <span class="value">+$5.20</span>
+                    </div>
+                    <div class="mockup-graph">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                        <div class="bar active" style="height: 90%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOWCASE 2: LEADERBOARD -->
+    <section class="showcase">
+        <div class="container split-layout reverse">
+            <div class="text-side">
+                <span class="eyebrow">Competition for Good</span>
+                <h2>Rise on the Leaderboard</h2>
+                <p>Competition isn't just about speed—it's about contribution. Our leaderboard ranks runners by distance AND funds raised. See who is leading the charge in sharing the wealth.</p>
+                <a href="leaderboard.html" class="btn filled">View Full Standings</a>
+            </div>
+            <div class="visual-side">
+                <div class="leaderboard-preview">
+                    <div class="lb-header">Top Contributors</div>
+                    <div class="lb-row gold">
+                        <span class="rank">1</span>
+                        <span class="name">Sarah J.</span>
+                        <span class="score">$250 Raised</span>
+                    </div>
+                    <div class="lb-row silver">
+                        <span class="rank">2</span>
+                        <span class="name">Mike C.</span>
+                        <span class="score">$180 Raised</span>
+                    </div>
+                    <div class="lb-row bronze">
+                        <span class="rank">3</span>
+                        <span class="name">You?</span>
+                        <span class="score">---</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOWCASE 3: CHALLENGES -->
+    <section class="showcase alternate-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Active Challenges</h2>
+                <p>Join a specific cause and push your limits.</p>
+            </div>
+            
+            <div class="challenges-preview-grid">
+                <div class="preview-card">
+                    <div class="card-image" style="background-color: #0b3d2e;">
+                        <span class="badge">Featured</span>
+                        <div class="icon">🎓</div>
+                    </div>
+                    <div class="card-details">
+                        <h3>Student Fun Run</h3>
+                        <p>Support financial aid directly.</p>
+                        <div class="progress-mini">
+                            <div class="bar-fill" style="width: 75%"></div>
+                        </div>
+                        <a href="challenge-details.html" class="small-link">Join Event</a>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="card-image" style="background-color: #00a36c;">
+                        <span class="badge">Active</span>
+                        <div class="icon">🍂</div>
+                    </div>
+                    <div class="card-details">
+                        <h3>November Distance</h3>
+                        <p>Run 50km this month.</p>
+                        <div class="progress-mini">
+                            <div class="bar-fill" style="width: 45%"></div>
+                        </div>
+                        <a href="challenge-november.html" class="small-link">Join Event</a>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="card-image" style="background-color: #e67e22;">
+                        <span class="badge">Upcoming</span>
+                        <div class="icon">🏔️</div>
+                    </div>
+                    <div class="card-details">
+                        <h3>Elevation Gain</h3>
+                        <p>Climb for the Food Bank.</p>
+                        <div class="progress-mini">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <a href="challenge-elevation.html" class="small-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <p>&copy; <span id="year"></span> UFV Run Club</p>
+        <p class="course-info">CIS 485: Ethics and Mgmt Issues in CS — Instructor: Kevin Renso</p>
+        <div class="social-links">
+            <a href="#">Instagram</a> • <a href="#">Twitter</a> • <a href="#">Strava</a>
+        </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Simple inline logic to show welcome message on Index if logged in
+    const user = localStorage.getItem('runClubUser');
+    const welcomeSpan = document.getElementById('user-welcome');
+    if(user && welcomeSpan) {
+        welcomeSpan.textContent = "Welcome, " + user;
+        welcomeSpan.style.display = "inline"; // Show it
+    } else if (welcomeSpan) {
+        welcomeSpan.style.display = "none"; // Hide if not logged in
+    }
+  </script>
+</body>
+</html>

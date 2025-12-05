@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sign Up - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      </div>
+      <div class="profile">
+        <a class="btn" href="login.html">Login</a>
+        <a class="btn filled" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Join the Movement</h1>
+      <p>Create an account to track runs and help share the wealth.</p>
+    </section>
+
+    <section class="form-section">
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="John Doe" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Student Email</label>
+          <input type="email" id="email" placeholder="student@ufv.ca" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
+
+        <!-- ETHICAL REQUIREMENT: Community Agreement -->
+        <div class="form-group" style="background-color: #e6fffa; padding: 15px; border-radius: 6px; border: 1px solid #00a36c;">
+            <label style="color: #00a36c; margin-bottom: 10px;">Community Pledge</label>
+            <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <input type="checkbox" id="pledge" required style="width: 20px; margin-top: 5px;">
+                <label for="pledge" style="font-weight: normal; font-size: 14px;">
+                    I agree that apps should not just help the rich. I pledge to use this platform to support the student community and "share the wealth."
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="form-btn">Create Account</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+  </footer>
+
+  <script src="script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

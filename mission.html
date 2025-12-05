@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Our Mission - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" xintegrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">Our Mission</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      </div>
+      <div class="profile">
+        <span id="user-welcome">Welcome, Guest</span>
+        <a class="btn" href="login.html">Login</a>
+        <a class="btn filled" href="signup.html">Join Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO HEADER -->
+    <section class="page-header mission-hero">
+      <h1>More Than Just Code</h1>
+      <p>Redefining how technology serves the student community.</p>
+    </section>
+
+    <div class="container mission-container">
+        
+        <!-- SECTION 1: THE PROBLEM (Side-by-Side) -->
+        <div class="content-card">
+            <div class="problem-wrapper">
+                <div class="problem-text">
+                    <h2 class="problem-title">The Problem</h2>
+                    <p class="problem-quote">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <strong>"APPS DO NOT help the community."</strong>
+                    </p>
+                    <p class="problem-desc">
+                        For too long, technology has been designed to extract value from users to benefit a small group of wealthy shareholders. The question we must ask is simple but uncomfortable: <br><br>
+                        <em>Why should apps help only the rich?</em>
+                    </p>
+                </div>
+                
+                <div class="problem-list-box">
+                    <h3 class="problem-list-title"><i class="fas fa-exclamation-circle"></i> The Current Reality</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-times"></i> Profits prioritize CEOs over user well-being.
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i> User data is commodified and sold.
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i> Premium costs exclude students in need.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: OUR SOLUTION (The Manifesto) -->
+        <div class="content-card solution-section">
+            <h2 class="solution-title">The Solution: "Share the Wealth"</h2>
+            
+            <div class="solution-quote">
+                <i class="fas fa-quote-left quote-corner-top"></i>
+                <p class="highlight-text">
+                    "Everyone should share the wealth, and our community would be stronger for it."
+                </p>
+                <i class="fas fa-quote-right quote-corner-bottom"></i>
+            </div>
+            
+            <div class="solution-grid">
+                <!-- Feature 1 -->
+                <div class="solution-item">
+                    <div class="solution-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3>Community First</h3>
+                    <p>We measure success by funds raised for students, not by daily active users or ad revenue.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="solution-item">
+                    <div class="solution-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Value Redistribution</h3>
+                    <p>Sponsors pay for your miles. That money goes directly to Student Aid, redistributing value to those who need it.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="solution-item">
+                    <div class="solution-icon"><i class="fas fa-unlock-alt"></i></div>
+                    <h3>Access for All</h3>
+                    <p>No paywalls. No premium tiers. Health and charity should be a universal right, not a luxury.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: ADVICE FOR FUTURE PROJECTS (Dark Theme) -->
+        <div class="dark-section">
+            <h2 class="dark-title">Advice for Future Projects</h2>
+            <p class="dark-desc">
+                To the CIS 485 Community: If you are building the next generation of apps, follow these ethical principles.
+            </p>
+
+            <div class="advice-grid">
+                
+                <!-- Principle 1 -->
+                <div class="advice-card">
+                    <div class="advice-number">01.</div>
+                    <h3>Build for Need, Not Greed</h3>
+                    <p>Before writing code, ask: "Does this help the rich get richer, or does it help a student buy lunch?" Prioritize features that solve survival problems over vanity metrics.</p>
+                </div>
+
+                <!-- Principle 2 -->
+                <div class="advice-card">
+                    <div class="advice-number">02.</div>
+                    <h3>Inclusivity is Mandatory</h3>
+                    <p>"Our community is stronger for it." This implies everyone must be included. Ensure your apps work for those with disabilities and on older, cheaper devices.</p>
+                </div>
+
+                <!-- Principle 3 -->
+                <div class="advice-card">
+                    <div class="advice-number">03.</div>
+                    <h3>Transparency is Key</h3>
+                    <p>If you generate wealth, show where it goes. Use dashboards (like ours) to prove to your users that their efforts are making a tangible difference.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <p>&copy; <span id="year"></span> UFV Run Club</p>
+        <p class="course-info">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Inline check to ensure welcome message displays if script.js hasn't fired yet
+    const user = localStorage.getItem('runClubUser');
+    const welcomeSpan = document.getElementById('user-welcome');
+    const loginBtn = document.querySelector('.btn[href="login.html"]');
+    const signupBtn = document.querySelector('.btn[href="signup.html"]');
+
+    if(user && welcomeSpan) {
+        welcomeSpan.textContent = "Welcome, " + user;
+        welcomeSpan.style.display = "inline"; 
+        if(loginBtn) loginBtn.style.display = 'none';
+        if(signupBtn) signupBtn.style.display = 'none';
+    } else if (welcomeSpan) {
+        welcomeSpan.style.display = "none"; 
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Leaderboard - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+         <a href="mission.html">Our Mission</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html" class="active">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      </div>
+      <div class="profile">
+        <a class="btn" href="login.html">Login</a>
+        <a class="btn filled" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Top Contributors</h1>
+      <p>Recognizing those who go the distance for their health and our community.</p>
+    </section>
+
+    <!-- ETHICAL STATS SUMMARY -->
+    <section style="text-align: center; margin: 30px 0;">
+        <div style="display: inline-block; background: #e6fffa; padding: 20px; border-radius: 8px; border: 1px solid #00a36c;">
+            <h3 style="color: #00a36c; margin-bottom: 5px;">Total Wealth Shared</h3>
+            <p style="font-size: 24px; font-weight: bold;">$1,250.00</p>
+            <p style="font-size: 14px;">Raised for Student Financial Aid this month</p>
+        </div>
+    </section>
+
+    <section class="table-section">
+      <table class="data-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Runner</th>
+                <th>Total Distance</th>
+                <th>Wealth Shared (Funds Raised)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="rank-1">
+                <td>1</td>
+                <td>Sarah Jenkins</td>
+                <td>120 km</td>
+                <td>$250.00</td>
+            </tr>
+            <tr class="rank-2">
+                <td>2</td>
+                <td>Mike Chen</td>
+                <td>115 km</td>
+                <td>$180.00</td>
+            </tr>
+            <tr class="rank-3">
+                <td>3</td>
+                <td>Kanwalpreet S.</td>
+                <td>98 km</td>
+                <td>$150.00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jessica Alba</td>
+                <td>85 km</td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Tom Brady</td>
+                <td>72 km</td>
+                <td>$50.00</td>
+            </tr>
+        </tbody>
+      </table>
+      <p style="text-align: center; margin-top: 20px; color: #666; font-size: 14px;">
+        * Leaderboard updates every Sunday. Ranking based on combination of distance and contribution.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Login - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html">Challenges</a>
+      </div>
+      <div class="profile">
+        <a class="btn filled" href="login.html">Login</a>
+        <a class="btn" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Welcome Back</h1>
+      <p>Log in to track your impact on the community.</p>
+    </section>
+
+    <section class="form-section">
+      <form>
+        <div class="form-group">
+          <label for="email">Student Email</label>
+          <input type="email" id="email" placeholder="student@ufv.ca" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+
+        <button type="submit" class="form-btn">Login</button>
+        
+        <p style="text-align: center; margin-top: 15px;">
+          Don't have an account? <a href="signup.html" style="color: #00a36c; font-weight: bold;">Sign up here</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

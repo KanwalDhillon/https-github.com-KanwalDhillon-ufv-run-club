@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>November Challenge - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html" class="active">Challenges</a>
+      </div>
+      <div class="profile">
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header" style="background: linear-gradient(135deg, #0b3d2e, #2ecc71);">
+      <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Monthly Goal</span>
+      <h1 style="margin-top: 15px;">November Distance Challenge</h1>
+      <p>Run 50km this month • Support Campus Food Bank</p>
+    </section>
+
+    <div class="container" style="display: flex; gap: 50px; flex-wrap: wrap; margin-bottom: 80px;">
+        
+        <div style="flex: 2; min-width: 300px;">
+            <!-- ETHICAL MISSION -->
+            <div style="background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-left: 5px solid #00a36c; margin-bottom: 40px;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;">Why This Challenge Matters</h2>
+                <p style="font-style: italic; font-size: 18px; color: #555; margin-bottom: 15px;">
+                    "Why should APPS help only the rich?"
+                </p>
+                <p>
+                    By committing to run 50km this month, you unlock corporate pledges for the Campus Food Bank. This isn't just about your fitness; it's about ensuring no student goes hungry. We are proving that our community is stronger when we share the wealth.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <h3 style="margin-bottom: 20px; font-size: 22px;">Challenge Details</h3>
+                <ul class="feature-list">
+                    <li><strong>Goal:</strong> 50 km total distance in November</li>
+                    <li><strong>Deadline:</strong> November 30th, 11:59 PM</li>
+                    <li><strong>Reward:</strong> "Food Bank Hero" Badge + $10 Donation in your name</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="flex: 1; min-width: 280px;">
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid #eee; position: sticky; top: 100px;">
+                <h3 style="margin-bottom: 5px;">Join Challenge</h3>
+                <p style="font-size: 13px; color: #666; margin-bottom: 25px;">Tracked automatically via Run Tracker.</p>
+                <button class="form-btn" onclick="alert('You joined the November Challenge! Every km helps the Food Bank.')">Start Tracking</button>
+            </div>
+        </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CS — Instructor: Kevin Renso</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

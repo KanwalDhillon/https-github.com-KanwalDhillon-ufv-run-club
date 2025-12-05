@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Challenges - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+         <a href="mission.html">Our Mission</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html" class="active">Challenges</a>
+      </div>
+     <div class="profile">
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Community Challenges</h1>
+      <p>Join friendly competitions and support our student community.</p>
+    </section>
+
+    <section class="challenges-section">
+      <!-- Featured Event -->
+      <h2>Featured Event</h2>
+      <div class="featured-challenge">
+        <div class="challenge-content">
+            <span class="tag">Charity Event</span>
+            <h3>Student Share-the-Wealth Run</h3>
+            <p><strong>Why join?</strong> Because apps shouldn't just help the rich. We believe <strong>"Everyone should share the wealth."</strong> This run supports student financial aid, making our community stronger.</p>
+            <ul>
+                <li><strong>Date:</strong> December 15th</li>
+                <li><strong>Goal:</strong> 5km Campus Loop</li>
+                <li><strong>Cause:</strong> Student Financial Aid</li>
+            </ul>
+            <!-- LINK UPDATED HERE -->
+            <a href="challenges-detail.html" class="btn filled">Register Now</a>
+        </div>
+        <div class="challenge-img">
+             <img src="fun-run.jpg" alt="Student Fun Run" onerror="this.src='https://placehold.co/600x400/0b3d2e/white?text=Fun+Run'"/>
+        </div>
+      </div>
+
+      <!-- Monthly Challenges Grid -->
+      <h2>Monthly Challenges</h2>
+      <div class="challenges-grid">
+        
+        <div class="challenge-card">
+          <div class="card-header">
+            <h3>November Distance</h3>
+            <span class="status active">Active</span>
+          </div>
+          <p>Run a total of 50km this month to earn the November Badge.</p>
+          <div class="progress-bar">
+            <div class="fill" style="width: 65%"></div>
+          </div>
+          <p class="small-text">65% of club joined</p>
+          <!-- LINK UPDATED HERE -->
+          <a href="challenges-nov.html" class="card-link">View Details</a>
+        </div>
+
+        <div class="challenge-card">
+          <div class="card-header">
+            <h3>Early Bird Week</h3>
+            <span class="status active">Active</span>
+          </div>
+          <p>Log 3 runs before 8:00 AM this week.</p>
+          <div class="progress-bar">
+            <div class="fill" style="width: 30%"></div>
+          </div>
+          <p class="small-text">30% of club joined</p>
+          <!-- LINK UPDATED HERE -->
+          <a href="challenges-early-bird.html" class="card-link">View Details</a>
+        </div>
+
+        <div class="challenge-card">
+          <div class="card-header">
+            <h3>Elevation Gain</h3>
+            <span class="status upcoming">Upcoming</span>
+          </div>
+          <p>Climb 500m of elevation in a single run.</p>
+          <p class="small-text">Starts in 5 days</p>
+          <a href="#" class="card-link disabled">Coming Soon</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+  </footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

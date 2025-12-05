@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Challenge Details - UFV Run Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="topnav">
+      <div class="logo"><a href="index.html">UFV Run Club</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+         <a href="mission.html">Our Mission</a>
+        <a href="run-tracker.html">Run Tracker</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="challenges.html" class="active">Challenges</a>
+      </div>
+      <div class="profile">
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px;">Welcome, Student</span>
+        <a class="btn" href="index.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- EVENT HERO HEADER -->
+    <section class="page-header" style="background: linear-gradient(135deg, #0b3d2e, #00a36c);">
+      <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Active Event</span>
+      <h1 style="margin-top: 15px;">Student "Share the Wealth" Run</h1>
+      <p>December 15th • 5km Campus Loop • Fundraising Event</p>
+    </section>
+
+    <div class="container" style="display: flex; gap: 50px; flex-wrap: wrap; margin-bottom: 80px;">
+        
+        <!-- LEFT COLUMN: EVENT DETAILS -->
+        <div style="flex: 2; min-width: 300px;">
+            
+            <!-- ETHICAL MANDATE SECTION (From PPT) -->
+            <div style="background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-left: 5px solid #00a36c; margin-bottom: 40px;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;">Why This Event Exists</h2>
+                <p style="font-style: italic; font-size: 18px; color: #555; margin-bottom: 15px;">
+                    "APPS DO NOT help the community, UNTIL NOW."
+                </p>
+                <p>
+                    Why should technology and apps help only the rich? We believe that everyone should <strong>share the wealth</strong>. By participating in this run, you aren't just exercising; you are proving that our student community is stronger when we support each other.
+                </p>
+                <p style="margin-top: 15px; font-weight: 600; color: #00a36c;">
+                    100% of proceeds go to Student Financial Aid.
+                </p>
+            </div>
+
+            <!-- EVENT LOGISTICS -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="margin-bottom: 20px; font-size: 22px;">Event Details</h3>
+                <p style="margin-bottom: 15px;">
+                    Join us for a 5km loop around the UFV campus. Whether you run, walk, or roll, your participation triggers donations from our community sponsors.
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Date:</strong> December 15th, 2023</li>
+                    <li><strong>Time:</strong> 9:00 AM Check-in / 10:00 AM Start</li>
+                    <li><strong>Location:</strong> UFV Green (Building G)</li>
+                    <li><strong>Goal:</strong> Raise $5,000 for student tuition relief</li>
+                </ul>
+            </div>
+
+            <!-- IMPACT VISUAL -->
+            <div style="background: #e6fffa; padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="color: #00a36c;">Community Goal</h3>
+                <div style="font-size: 48px; font-weight: 800; color: #0b3d2e; margin: 10px 0;">$3,450 / $5,000</div>
+                <p>Raised so far by 142 students sharing the wealth.</p>
+                <div class="progress-bar" style="height: 15px; background: rgba(0,0,0,0.1); margin-top: 20px;">
+                    <div class="fill" style="width: 69%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: REGISTRATION CARD -->
+        <div style="flex: 1; min-width: 280px;">
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid #eee; position: sticky; top: 100px;">
+                <h3 style="margin-bottom: 5px;">Register Now</h3>
+                <p style="font-size: 13px; color: #666; margin-bottom: 25px;">Free for students. Pledges optional.</p>
+                
+                <form onsubmit="alert('You have successfully registered! Thank you for sharing the wealth.'); return false;">
+                    <div class="form-group">
+                        <label>Select Your Pledge (Optional)</label>
+                        <select>
+                            <option>I will run for awareness (Free)</option>
+                            <option>Donate $5.00</option>
+                            <option>Donate $10.00</option>
+                            <option>Donate $20.00</option>
+                        </select>
+                    </div>
+                    
+                    <button class="form-btn" style="margin-top: 10px;">Confirm Registration</button>
+                </form>
+
+                <div style="margin-top: 20px; text-align: center; font-size: 13px; color: #888;">
+                    <p>Earn the <strong>"Community Helper"</strong> badge upon completion.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> UFV Run Club — Built by Kanwalpreet</p>
+    <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">CIS 485: Ethics and Mgmt Issues in CIS — Instructor: Kevin Renso</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
