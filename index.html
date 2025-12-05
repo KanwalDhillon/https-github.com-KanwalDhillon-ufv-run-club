@@ -14,19 +14,14 @@
       <div class="logo"><a href="index.html">UFV Run Club</a></div>
       <div class="menu">
         <a href="index.html" class="active">Home</a>
-          <a href="mission.html">Our Mission</a>
+        <!-- ADDED LINK TO NEW PAGE -->
+        <a href="about.html">Our Mission</a>
         <a href="run-tracker.html">Run Tracker</a>
         <a href="leaderboard.html">Leaderboard</a>
         <a href="challenges.html">Challenges</a>
-      
       </div>
       <div class="profile">
-        <!-- ADDED ID="user-welcome" HERE -->
-        <!-- Logic in script.js will update this text if user is logged in -->
-       
-        
-        <!-- Script will toggle these based on login state (advanced) or just show links -->
-        <!-- For now, we keep simple links, but add the welcome text above -->
+        <span id="user-welcome" style="color: white; font-weight: bold; margin-right: 15px; display: none;">Welcome, Guest</span>
         <a class="btn" href="login.html">Login</a>
         <a class="btn filled" href="signup.html">Join Now</a>
       </div>
@@ -52,8 +47,10 @@
       <div class="container">
         <h2>Our Core Mission</h2>
         <div class="mission-box">
-            <p class="highlight-text">"APPS DO NOT help the community, UNTIL NOW."</p>
+            <!-- UPDATED COLOR TO WHITE HERE -->
+            <p class="highlight-text" style="color: white;">"APPS DO NOT help the community, UNTIL NOW."</p>
             <p>Most fitness apps focus on the individual. We focus on the collective. We believe everyone should <strong>share the wealth</strong>, and our student community is stronger for it.</p>
+            <a href="about.html" class="text-link" style="margin-top: 15px; display: inline-block;">Read our full Manifesto &rarr;</a>
         </div>
       </div>
     </section>
@@ -199,14 +196,19 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     
-    // Simple inline logic to show welcome message on Index if logged in
+    // Inline check to ensure welcome message displays if script.js hasn't fired yet
     const user = localStorage.getItem('runClubUser');
     const welcomeSpan = document.getElementById('user-welcome');
+    const loginBtn = document.querySelector('.btn[href="login.html"]');
+    const signupBtn = document.querySelector('.btn[href="signup.html"]');
+
     if(user && welcomeSpan) {
         welcomeSpan.textContent = "Welcome, " + user;
-        welcomeSpan.style.display = "inline"; // Show it
+        welcomeSpan.style.display = "inline"; 
+        if(loginBtn) loginBtn.style.display = 'none';
+        if(signupBtn) signupBtn.style.display = 'none';
     } else if (welcomeSpan) {
-        welcomeSpan.style.display = "none"; // Hide if not logged in
+        welcomeSpan.style.display = "none"; 
     }
   </script>
 </body>
